@@ -22,7 +22,7 @@ public class db {
 				  "CREATE TABLE IF NOT EXISTS `ocelot`("
 				  + "`id` INTEGER PRIMARY KEY AUTOINCREMENT,"
 				  + "`player` text(16) NOT NULL,"
-				  + "`name` BOOLEAN NOT NULL,"
+				  + "`name` text(16) NOT NULL,"
 				  + "`date` LONG NOT NULL"
 				  + ")"
 			);
