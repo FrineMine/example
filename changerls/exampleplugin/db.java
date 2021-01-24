@@ -42,11 +42,11 @@ public class db {
     }
 
     public static void insert(String killer, String name, long date) {
-	    if (!hasConnected()) {
-	        connect();
-	    }
-        try {
-        	connection.createStatement().execute("INSERT INTO `ocelot`(`player`,`name`,`date`) VALUES ('" + killer + "','" + name + "','" + date + "')");
+		if (!hasConnected()) {
+			connect();
+		}
+		try {
+			connection.createStatement().execute("INSERT INTO `ocelot`(`player`,`name`,`date`) VALUES ('" + killer + "','" + name + "','" + date + "')");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
